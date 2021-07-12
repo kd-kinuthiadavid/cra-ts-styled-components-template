@@ -1,8 +1,14 @@
 import styled, { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme";
 
+// import @fontsource fonts
+// for more info @see: https://fontsource.org/docs/getting-started
+import "@fontsource/poppins";
+import "@fontsource/rubik";
+
 const StyledApp = styled.div`
   color: ${props => props.theme.colors.secondary};
+  font-family: ${props => props.theme.fonts.main}, sans-serif;
   background-color: black;
 `;
 
